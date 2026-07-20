@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.keel.so/authentication/tokens + https://docs.keel.so/authentication/providers
+docs: https://docs.keel.so/authentication/getting-started
+notes: >-
+  Keel generates authentication for each project. End-user/API access uses short-lived
+  bearer access tokens (JWT, RS256) obtained from the project's /auth/token endpoint, with
+  long-lived refresh tokens and refresh-token rotation on by default. Identity is OIDC-based:
+  Keel supports Single Sign-On (SSO) providers, ID-token exchange, and password flows, with
+  PKCE in the SSO/authorization-code flow. Permissions are enforced via a role-based
+  permissions model declared in the Keel schema (see conventions + docs/permissions).
+summary:
+  types: [http, oauth2, openIdConnect]
+  api_key_in: []
+  token_format: JWT (RS256)
+  oauth2_flows: [authorizationCode, refreshToken, password]
+  refresh_token_rotation: true
+  pkce: true
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  bearerFormat: JWT
+  description: >-
+    Access tokens are sent as `Authorization: Bearer <access_token>`. Access tokens are
+    short-lived (default expires_in 86400s); refresh via POST /auth/token grant_type=refresh_token
+    (default refresh token lifetime 3 months, rotated on each use).
+  source: https://docs.keel.so/authentication/tokens
+- name: oidcSso
+  type: openIdConnect
+  description: >-
+    OIDC-based Single Sign-On providers configured per project; PKCE-protected authorization
+    code flow, plus ID-token exchange for pre-authenticated clients.
+  source: https://docs.keel.so/authentication/providers
+endpoints:
+  token: /auth/token
+  token_response_fields: [access_token, token_type, expires_in, refresh_token, identity_created]
