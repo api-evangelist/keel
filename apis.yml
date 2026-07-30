@@ -1,22 +1,110 @@
 aid: keel
 name: Keel
-description: Keel is a company surfaced as a portfolio company of earlybird and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Keel is code-first operations software for growing companies — a modern alternative to
+  legacy ERP and no-code tools. Teams model their data and business logic in a declarative
+  schema plus TypeScript functions, and Keel generates production-grade JSON and GraphQL
+  APIs, a type-safe generated client, authentication (bearer JWT with OIDC/SSO), role-based
+  permissions, background jobs, events, multi-step flows, and an admin console with internal
+  tools. Built by Planko Ltd (London) and founded in 2022 by operators who scaled the Echo
+  pharmacy to 50,000 prescriptions a day and £100M revenue, Keel is backed by Earlybird and
+  LocalGlobe and is distributed as an AGPL-3.0 open-source framework plus a hosted platform.
 url: https://raw.githubusercontent.com/api-evangelist/keel/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://keel.so/icon.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - earlybird
-x-tier: stub
-x-tier-reason: portfolio-lead
+- localglobe
+x-legal-entity: Planko Ltd
+x-founded: '2022'
+x-headquarters: London, United Kingdom
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Operations
+- ERP
+- Backend
+- GraphQL
+- API
+- Low-Code
+- Developer Tools
+- Workflow
+- Authentication
+- TypeScript
 apis: []
+common:
+- type: DomainSecurity
+  url: security/keel-domain-security.yml
+- type: Website
+  url: https://keel.so
+- type: DeveloperPortal
+  url: https://docs.keel.so
+- type: Documentation
+  url: https://docs.keel.so
+- type: APIReference
+  url: https://docs.keel.so/apis/json
+- type: GettingStarted
+  url: https://docs.keel.so/quickstart
+- type: GraphQL
+  url: https://docs.keel.so/apis/graphql
+- type: Support
+  url: https://keel.so/contact
+- type: Blog
+  url: https://keel.so/blog
+- type: GitHubOrganization
+  url: https://github.com/teamkeel
+- type: SignUp
+  url: https://console.keel.so
+- type: Login
+  url: https://console.keel.so
+- type: TermsOfService
+  url: https://keel.so/terms-of-service
+- type: PrivacyPolicy
+  url: https://keel.so/privacy
+- type: StatusPage
+  url: https://status.keel.so
+- type: TrustCenter
+  url: https://trust.keel.so
+- type: X
+  url: https://twitter.com/keelteam
+- type: LLMsTxt
+  url: llms/keel-llms.txt
+- type: Packages
+  url: packages/keel-packages.yml
+- type: SDKs
+  url: packages/keel-packages.yml
+- type: CLI
+  url: cli/keel-cli.yml
+- type: Authentication
+  url: authentication/keel-authentication.yml
+- type: Conventions
+  url: conventions/keel-conventions.yml
+- type: Conformance
+  url: conformance/keel-conformance.yml
+- type: Lifecycle
+  url: lifecycle/keel-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
