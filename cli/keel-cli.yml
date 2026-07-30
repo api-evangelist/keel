@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.keel.so/cli
+binary: keel
+install:
+- method: npm
+  command: npm install -g keel
+- method: homebrew
+  command: brew install teamkeel/keel/keel
+verify: keel --version
+global_flags:
+- flag: "--dir"
+  description: Project directory to operate in.
+- flag: "--version"
+  description: Pin/select the Keel runtime version.
+commands:
+- name: init
+  description: Set up a new Keel project from templates.
+- name: run
+  description: Start the local development server (local APIs + database).
+- name: generate
+  description: Create SDK and function scaffolds from the schema.
+- name: validate
+  description: Check schema and configuration files.
+- name: test
+  description: Execute the project test suite via Vitest.
+- name: client
+  description: Produce a type-safe TypeScript API client.
+- name: db
+  description: Administer the local development database.
+  subcommands:
+  - name: seed
+    description: Apply SQL seed files.
+  - name: snapshot
+    description: Capture database state.
+  - name: reset
+    description: Rebuild an empty database.
+- name: secrets
+  description: Manage local development secrets.
+  subcommands:
+  - name: list
+    description: Display environment secrets.
+  - name: set
+    description: Store a secret value.
+  - name: remove
+    description: Delete a secret.
+- name: seed
+  description: Author seed data offline.

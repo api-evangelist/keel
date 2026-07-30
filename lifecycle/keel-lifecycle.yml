@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.keel.so + https://docs.keel.so + https://www.npmjs.com/package/keel
+versioning:
+  scheme: semver
+  artifact: keel (npm) + @teamkeel/sdk (npm)
+  docs: https://docs.keel.so
+  notes: >-
+    Keel runtime and CLI are versioned via npm semver (the `keel` and `@teamkeel/*` packages);
+    the `keel run`/CLI accepts a --version flag to pin the runtime. No dated public REST API
+    version policy is published because each project generates its own APIs.
+status_page: https://status.keel.so
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal deprecation/Sunset-header policy published.
+sla:
+  url: https://trust.keel.so
+  uptime_target: null
+deprecated_operations: []

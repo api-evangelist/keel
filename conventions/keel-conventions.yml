@@ -1,0 +1,56 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.keel.so/apis/json + https://docs.keel.so/apis/graphql + https://docs.keel.so/authentication/tokens
+notes: >-
+  Keel projects expose their schema-defined Actions over two generated API styles — a JSON
+  API and a GraphQL API — plus a generated type-safe client. These are the cross-cutting
+  runtime semantics shared across generated endpoints.
+api_styles:
+- style: json
+  docs: https://docs.keel.so/apis/json
+  path_pattern: /api/json/<actionName>
+  method: POST
+  payload: plain JSON
+- style: graphql
+  docs: https://docs.keel.so/apis/graphql
+- style: generated-client
+  docs: https://docs.keel.so/apis/client
+  notes: TypeScript client produced by `keel client`.
+authentication:
+  style: bearer-jwt
+  header: "Authorization: Bearer <access_token>"
+  ref: authentication/keel-authentication.yml
+pagination:
+  styles: [cursor, offset]
+  cursor_params: [first, after, last, before]
+  offset_params: [limit, offset]
+  response_container: results
+  page_info_fields: [startCursor, endCursor, pageNumber]
+  notes: >-
+    List actions accept inputs under a `where` key and return an object with `results` and
+    `pageInfo`. Cursor pagination uses first/after and last/before; offset pagination uses
+    limit/offset with pageInfo.pageNumber.
+filtering:
+  docs: https://docs.keel.so/filtering
+  notes: List actions filter via a `where` object keyed by model fields.
+mutation_shape:
+  update: "{ where: {...read inputs}, values: {...write inputs} }"
+  create: "{ ...write inputs } -> returns created record"
+  get: "returns record or null"
+error_envelope:
+  format: keel-json-error
+  http_status_example: 400
+  fields: [code, message, data]
+  example:
+    code: ERR_INVALID_INPUT
+    message: one or more errors found validating request object
+    data:
+      errors:
+      - field: "<field>"
+        error: "<detail>"
+idempotency:
+  supported: false
+  notes: No idempotency-key contract is documented for the generated JSON/GraphQL APIs.
+versioning:
+  ref: lifecycle/keel-lifecycle.yml
+  notes: Runtime/CLI versioned via npm semver (`keel` package); no dated public API version policy documented.

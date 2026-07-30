@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: searched
+source: https://keel.so (homepage "Trust Centre" link) -> https://trust.keel.so/
+probe: true
+url: https://trust.keel.so/
+certifications: []
+notes: >-
+  Keel publishes a hosted Trust Center at trust.keel.so, linked from the keel.so homepage.
+  The page is a JavaScript-rendered trust portal (SafeBase-style); named certifications and
+  the subprocessor/document list are not present in the static HTML and could not be machine-
+  extracted. The URL is verified real; certification names left empty rather than fabricated.
+evidence:
+- source: https://keel.so
+  kind: homepage-link
+  detail: "Trust Centre -> https://trust.keel.so/"

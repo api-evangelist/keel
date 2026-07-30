@@ -1,0 +1,51 @@
+# generated: '2026-07-19'
+# method: searched
+# source: https://keel.so/llms.txt
+#
+# Keel
+
+> Operations software for growing companies whose systems are holding them back. Keel is built for ops leaders whose operations are too critical to run on spreadsheets, but too specific for off-the-shelf software. It gives teams the flexibility of custom-built operations software — without the cost, risk, or 18-month implementation of traditional ERP.
+
+Keel enters the picture at a specific moment: the business is working, growth is happening, but the operational foundations are starting to strain. Spreadsheets have become mission-critical. Workarounds are core processes. One or two people hold critical knowledge. Changes feel risky. Off-the-shelf tools force workflows the business has outgrown. ERP feels slow, rigid, and irreversible.
+
+Keel is what teams choose when buying or building isn't an option. Systems are built around how the business actually works — not the other way around — and can evolve safely as operations change. Unlike ERPs, Keel does not force predefined workflows. Unlike no-code tools, it is robust, testable, and engineered for scale. Unlike internal builds, it does not compete with product teams for attention.
+
+Keel exists because its founders faced these exact constraints at Echo, scaling a regulated pharmacy operation to 50,000 prescriptions per day and £100M revenue. They built their own operations software because nothing else worked. Keel is the result of that experience.
+
+## Core Product
+
+- [Homepage](https://keel.so): Operations software for growing companies
+- [Tasks](https://keel.so/tasks): Replace mission-critical spreadsheets with structured workflows
+- [Developers](https://keel.so/developers): Technical overview for engineering teams
+
+## Use cases
+
+- [Inventory management](https://keel.so/use-cases/inventory): Track and manage inventory levels
+- [Procurement](https://keel.so/use-cases/procurement): Streamline supplier relationships and contracts
+- [CRM](https://keel.so/use-cases/crm): Manage customer relationships and interactions
+
+## About
+
+- [About us](https://keel.so/about): Team and company background
+- [Blog](https://keel.so/blog): Product updates, customer stories, and operational insights
+- [Fundraise announcement](https://keel.so/blog/announcing-our-fundraise): Keel raises $6M to bridge the gap between spreadsheets and ERP
+- [Careers](https://keel.so/careers): Open roles
+
+## Documentation
+
+- [Introduction](https://docs.keel.so): Getting started with Keel
+- [What is Keel?](https://docs.keel.so/what-is-keel): Platform overview and concepts
+- [Quickstart](https://docs.keel.so/quickstart): Build and deploy your first Keel project
+- [Models](https://docs.keel.so/models): Defining your data schema
+- [Actions](https://docs.keel.so/actions): Exposing APIs and CRUD operations
+- [Functions](https://docs.keel.so/functions): Custom TypeScript business logic
+- [Flows](https://docs.keel.so/flows): Multi-step workflows with UI steps
+- [Jobs](https://docs.keel.so/jobs): Scheduled and triggered background tasks
+- [Events](https://docs.keel.so/events): Event-driven architecture
+- [Permissions](https://docs.keel.so/permissions): Role-based access control
+- [Identity](https://docs.keel.so/identity): Authentication and SSO
+
+## Support
+
+- [Book a demo](https://savvycal.com/Keel/demo): Talk to the team
+- [Status](https://status.keel.so): Platform status and uptime

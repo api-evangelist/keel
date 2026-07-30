@@ -1,0 +1,59 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.npmjs.org/ (npm) + https://github.com/teamkeel
+notes: >-
+  Keel is distributed as an AGPL-3.0 open-source framework. The `keel` npm package is the
+  CLI/runtime; `@teamkeel/sdk` is the SDK for authoring custom TypeScript functions inside a
+  Keel project; per-project type-safe API clients are produced by `keel client` rather than a
+  standalone client library. Homebrew tap teamkeel/homebrew-keel also distributes the CLI.
+packages:
+- language: javascript
+  registry: npm
+  name: keel
+  url: https://www.npmjs.com/package/keel
+  install: npm install -g keel
+  description: Keel CLI and runtime — "Your production-grade backend from one file".
+  license: AGPL-3.0-only
+  official: true
+- language: javascript
+  registry: npm
+  name: "@teamkeel/sdk"
+  url: https://www.npmjs.com/package/@teamkeel/sdk
+  install: npm install @teamkeel/sdk
+  description: JavaScript/TypeScript SDK for implementing custom functions within the Keel universe.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@teamkeel/functions-runtime"
+  url: https://www.npmjs.com/package/@teamkeel/functions-runtime
+  install: npm install @teamkeel/functions-runtime
+  description: Internal runtime package used by @teamkeel/sdk to execute custom functions.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@teamkeel/testing"
+  url: https://www.npmjs.com/package/@teamkeel/testing
+  install: npm install @teamkeel/testing
+  description: Testing helpers for Keel projects (Vitest-based).
+  official: true
+- language: javascript
+  registry: npm
+  name: "@teamkeel/wasm"
+  url: https://www.npmjs.com/package/@teamkeel/wasm
+  install: npm install @teamkeel/wasm
+  description: Wrapper around the Keel WASM binary (schema parsing/validation).
+  official: true
+- language: javascript
+  registry: npm
+  name: create-keel
+  url: https://www.npmjs.com/package/create-keel
+  install: npm create keel
+  description: Scaffolder for new Keel projects.
+  official: true
+- language: cli
+  registry: homebrew
+  name: teamkeel/keel
+  url: https://github.com/teamkeel/homebrew-keel
+  install: brew install teamkeel/keel/keel
+  description: Homebrew tap distributing the Keel CLI.
+  official: true

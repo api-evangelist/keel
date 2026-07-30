@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.keel.so/authentication + https://docs.keel.so/apis/graphql + https://docs.keel.so/apis/json
+notes: >-
+  Cross-cutting standards Keel's generated APIs and authentication conform to, asserted from
+  the public documentation. Keel is code-first: each project generates its own APIs, so
+  content-level conformance (e.g. RFC 9457 problem+json) is not published — Keel uses its own
+  JSON error envelope instead.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Token endpoint /auth/token with grant_type=refresh_token and authorization-code/password
+    flows; bearer access tokens; refresh-token rotation.
+- id: oidc
+  conforms: true
+  evidence: OIDC-based identity with SSO providers and ID-token exchange (docs/authentication/providers).
+- id: pkce
+  conforms: true
+  evidence: PKCE used in the SSO/authorization-code flow.
+- id: jwt
+  conforms: true
+  evidence: Access tokens are JWT (RS256).
+- id: graphql
+  conforms: true
+  evidence: Generated GraphQL API over schema Actions (docs/apis/graphql).
+- id: cursor-pagination
+  conforms: true
+  evidence: List actions support cursor pagination (first/after/last/before + pageInfo).
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Uses a proprietary JSON error envelope { code, message, data.errors[] }, not application/problem+json.
+- id: rest-json-api
+  conforms: false
+  evidence: JSON API is RPC-style (POST /api/json/<action>), not JSON:API media type.
