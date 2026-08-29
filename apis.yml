@@ -10,6 +10,17 @@ description: >-
   pharmacy to 50,000 prescriptions a day and £100M revenue, Keel is backed by Earlybird and
   LocalGlobe and is distributed as an AGPL-3.0 open-source framework plus a hosted platform.
 url: https://raw.githubusercontent.com/api-evangelist/keel/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
