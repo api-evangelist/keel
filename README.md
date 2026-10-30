@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Keel is a company surfaced as a portfolio company of earlybird and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Keel is code-first operations software for growing companies — a modern alternative to legacy ERP and no-code tools. Teams model their data and business logic in a declarative schema plus TypeScript functions, and Keel generates production-grade JSON and GraphQL APIs, a type-safe generated client, authentication (bearer JWT with OIDC/SSO), role-based permissions, background jobs, events, multi-step flows, and an admin console with internal tools. Built by Planko Ltd (London) and founded in 2022 by operators who scaled the Echo pharmacy to 50,000 prescriptions a day and £100M revenue, Keel is backed by Earlybird and LocalGlobe and is distributed as an AGPL-3.0 open-source framework plus a hosted platform.
 
-Backed by: earlybird
+**Areas:** Company · ERP · Backend · GraphQL · Low-Code · Developer Tools · Workflows · Authentication · TypeScript
+
+## Keel on APIs.io
+
+Everything profiled for Keel is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/keel/](https://apis.io/providers/keel/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Keel Authentication](https://apis.io/security/keel/keel-authentication/)
+- [Keel Domain Security](https://apis.io/security/keel/keel-domain-security/)
+- [Keel Trust Center](https://apis.io/security/keel/keel-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://keel.so)
+- [Documentation](https://docs.keel.so)
+- [Getting started](https://docs.keel.so/quickstart)
+- [API reference](https://docs.keel.so/apis/json)
+- [Sign up](https://console.keel.so)
+- [Support](https://keel.so/contact)
+- [Blog](https://keel.so/blog)
+- [Trust centre](https://trust.keel.so)
+- [Terms of service](https://keel.so/terms-of-service)
+- [Privacy policy](https://keel.so/privacy)
+- [GitHub](https://github.com/teamkeel)
+- [Status](https://status.keel.so)
+
+## API Evangelist rating
+
+**Kin Score 31.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 28.9 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/keel/](https://apis.io/providers/keel/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Keel: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/keel/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
